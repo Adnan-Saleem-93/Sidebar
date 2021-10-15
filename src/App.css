@@ -1,16 +1,20 @@
+.main {
+  display: flex;
+}
 .App {
   margin: 1rem;
-  display: flex;
 }
 button {
   border: none;
 }
 .btn-sidebar svg,
+.btn-closeSidebar svg,
 .btn-modal {
   font-size: x-large;
   color: rgb(108, 77, 182);
 }
 .btn-sidebar svg:hover,
+.btn-closeSidebar svg:hover,
 .btn-modal:hover {
   color: rgb(67, 44, 121);
 }
@@ -18,3 +22,39 @@ button {
   margin: 0 auto;
   text-align: center;
 }
+
+/* #region Sidebar*/
+
+.sidebar {
+  background-color: #fff;
+  width: 18rem;
+  position: absolute;
+  box-shadow: 5px 0px 15px 0px grey;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 300ms linear;
+  z-index: 3;
+  transform: translateX(-25rem);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.single-link {
+  color: #353570;
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+}
+.link-icon {
+  margin-right: 10px;
+}
+.link-text {
+  text-transform: capitalize;
+}
+/* #endregion */

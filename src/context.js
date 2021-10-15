@@ -7,11 +7,9 @@ export const AppProvider = ({children}) => {
   const [showSidebar, setShowSidebar] = useState(false)
 
   const handleOpenCloseModal = () => {
-    console.log(`modal ${showModal ? 'open' : 'closed'}`)
     setShowModal(!showModal)
   }
   const handleOpenCloseSidebar = () => {
-    console.log(`sidebar ${showSidebar ? 'open' : 'closed'}`)
     setShowSidebar(!showSidebar)
   }
 
@@ -24,6 +22,6 @@ export const AppProvider = ({children}) => {
   )
 }
 
-export const useGlobalContext = () => {
+export const useAppContext = () => {
   return useContext(AppContext)
 }
