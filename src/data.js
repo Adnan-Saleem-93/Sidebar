@@ -47,21 +47,25 @@ export const social = [
   {
     id: 1,
     url: 'https://www.facebook.com',
-    icon: <FaFacebook />
+    icon: <FaFacebook />,
+    title: 'Facebook'
   },
   {
     id: 2,
     url: 'https://www.twitter.com',
-    icon: <FaTwitter />
+    icon: <FaTwitter />,
+    title: 'Twitter'
   },
   {
     id: 3,
     url: 'https://www.Linkedin.com',
-    icon: <FaLinkedin />
+    icon: <FaLinkedin />,
+    title: 'Linkedin'
   },
   {
     id: 4,
     url: 'https://www.behance.net',
-    icon: <FaBehance />
+    icon: <FaBehance />,
+    title: 'Behance'
   }
 ]
