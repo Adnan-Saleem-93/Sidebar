@@ -15,7 +15,7 @@ const SideBar = () => {
   return (
     <section className="sidebar" ref={sidebarRef}>
       <article className="header">
-        <h3 style={{marginBottom: '0px', color: '#054b60d6'}}>Sidebar</h3>
+        <h3>Sidebar</h3>
         <button className="btn-closeSidebar" onClick={handleOpenCloseSidebar} title="Close Sidebar">
           <FaTimes></FaTimes>
         </button>
@@ -32,9 +32,7 @@ const SideBar = () => {
         })}
       </article>
       <article className="social">
-        <h3 style={{marginBottom: '0px', color: '#054b60d6'}} className="header">
-          Social
-        </h3>
+        <h3 className="header">Social</h3>
         {social.map((link, index) => {
           let {icon, url, title} = link
           return (

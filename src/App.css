@@ -13,6 +13,10 @@ button {
   font-size: x-large;
   color: rgb(108, 77, 182);
 }
+h3 {
+  margin-bottom: 0 !important;
+  color: #054b60d6;
+}
 .btn-sidebar svg:hover,
 .btn-closeSidebar svg:hover,
 .btn-modal:hover {
@@ -22,7 +26,10 @@ button {
   margin: 0 auto;
   text-align: center;
 }
-
+.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+}
 /* #region Sidebar*/
 
 .sidebar {
@@ -35,7 +42,7 @@ button {
   left: 0;
   transition: all 300ms linear;
   z-index: 3;
-  transform: translateX(-25rem);
+  transform: translateX(-100%);
   padding: 1rem;
 }
 
@@ -55,11 +62,34 @@ button {
 }
 .social-link {
   display: inline !important;
+  font-size: x-large;
+  padding: 0.5rem;
 }
 .link-icon {
   margin-right: 10px;
 }
 .link-text {
   text-transform: capitalize;
+}
+/* #endregion */
+
+/* #region Modal */
+.modal-sect {
+  width: 70vw;
+  margin: 3rem auto;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px 5px lightgrey;
+  border-radius: 5px;
+  transition: all 200ms linear;
+}
+.visible {
+  transform: scale(1);
+}
+
+.hidden {
+  transform: scale(0);
+}
+.modal-body {
+  text-align: center;
 }
 /* #endregion */
