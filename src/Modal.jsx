@@ -6,10 +6,8 @@ const Modal = () => {
   const {handleOpenCloseModal, showModal} = useAppContext()
   const modalRef = useRef()
   useEffect(() => {
-    // modalRef.current.style.display = `${showModal ? 'block' : 'none'}`
     modalRef.current.classList.remove(`${showModal ? 'hidden' : 'visible'}`)
     modalRef.current.classList.add(`${showModal ? 'visible' : 'hidden'}`)
-    // modalRef.current.style.transform = `translateY(${showModal ? '0' : '-100vh'})`
   }, [showModal])
   return (
     <>
